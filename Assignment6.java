@@ -91,10 +91,11 @@ public class SwiftCargoKnapsack {
 /*SwiftCargo - Truck Loading Optimization (Knapsack with Perishables)
 
 Items loaded in the truck:
-✅ Item 3 | Weight: 30 | Utility: 144 | Perishable: Yes
-✅ Item 5 | Weight: 15 | Utility: 90 | Perishable: Yes
-✅ Item 1 | Weight: 10 | Utility: 72 | Perishable: Yes
+ Item 3 | Weight: 30 | Utility: 144 | Perishable: Yes
+ Item 5 | Weight: 15 | Utility: 90 | Perishable: Yes
+ Item 1 | Weight: 10 | Utility: 72 | Perishable: Yes
 Total Weight Loaded: 55 kg
 
-📦 Maximum Total Utility (using DP): 306
+ Maximum Total Utility (using DP): 306
+
 */
