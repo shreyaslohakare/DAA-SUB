@@ -135,3 +135,13 @@ public class Assignment8 {
         tspLC(costMatrix);
     }
 }
+/*int[][] costMatrix = {
+    {INF, 10, 15, 20},
+    {10, INF, 35, 25},
+    {15, 35, INF, 30},
+    {20, 25, 30, INF}
+};
+Optimal Route: [0, 1, 3, 2, 0]
+Minimum Cost: 80
+    */
+
