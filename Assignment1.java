@@ -14,7 +14,7 @@ class Order {
 
 public class Assignment1{
 
-    // Merge function
+    
     public static void merge(List<Order> arr, int left, int mid, int right) {
         int n1 = mid - left + 1;
         int n2 = right - mid;
@@ -51,7 +51,7 @@ public class Assignment1{
         merge(arr, left, mid, right);
     }
 
-    // Helper: Generate random orders
+   
     public static List<Order> generateOrders(int n) {
         List<Order> orders = new ArrayList<>();
         Random rand = new Random();
@@ -64,7 +64,7 @@ public class Assignment1{
         return orders;
     }
 
-    // Print orders (for small examples)
+    
     public static void printOrders(List<Order> orders, int limit) {
         int size = Math.min(limit, orders.size());
         for (int i = 0; i < size; i++) {
@@ -99,3 +99,4 @@ Order 4 | Timestamp: 321908167 | Value: 767.96
 Order 9 | Timestamp: 376850089 | Value: 878.21
 Order 7 | Timestamp: 432800253 | Value: 613.15
 */
+
