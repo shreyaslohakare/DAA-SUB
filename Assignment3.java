@@ -15,7 +15,7 @@ class Item {
 public class Assignment3{
 
     static double fractionalKnapsack(List<Item> items, double capacity) {
-        // Sort items by ratio in descending order
+        
         items.sort((a, b) -> Double.compare(b.ratio, a.ratio));
 
         double totalUtility = 0.0;
@@ -66,4 +66,5 @@ Enter utility and weight for each item:
 60 20
 30 20
 Maximum utility value = 
+
 15.0*/
