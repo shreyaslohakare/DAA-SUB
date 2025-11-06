@@ -16,7 +16,7 @@ class Item {
 
 public class SwiftCargoKnapsack {
 
-    // Boost perishable item utility by 20%
+    
     static void boostPerishableUtility(List<Item> items) {
         for (Item it : items) {
             if (it.perishable) {
@@ -25,7 +25,7 @@ public class SwiftCargoKnapsack {
         }
     }
 
-    // Display selected items from DP table
+  
     static void displaySelectedItems(int[][] dp, List<Item> items, int capacity) {
         int i = items.size();
         int w = capacity;
@@ -48,7 +48,7 @@ public class SwiftCargoKnapsack {
         System.out.println("Total Weight Loaded: " + totalWeight + " kg");
     }
 
-    // Standard DP-based 0/1 Knapsack
+    
     static int knapsackDP(List<Item> items, int capacity) {
         int n = items.size();
         int[][] dp = new int[n + 1][capacity + 1];
@@ -99,3 +99,4 @@ Total Weight Loaded: 55 kg
  Maximum Total Utility (using DP): 306
 
 */
+
