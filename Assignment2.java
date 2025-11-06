@@ -16,7 +16,7 @@ class Movie {
 
 public class Assignment2{
 
-    // Comparator functions
+   
     static boolean cmpRating(Movie a, Movie b) {
         return a.rating > b.rating;
     }
@@ -29,7 +29,7 @@ public class Assignment2{
         return a.popularity > b.popularity;
     }
 
-    // Partition function
+    
     static int partition(List<Movie> movies, int low, int high, Comparator<Movie> cmp) {
         Movie pivot = movies.get(high);
         int i = low - 1;
@@ -44,7 +44,7 @@ public class Assignment2{
         return i + 1;
     }
 
-    // QuickSort function
+    
     static void quickSort(List<Movie> movies, int low, int high, Comparator<Movie> cmp) {
         if (low < high) {
             int pi = partition(movies, low, high, cmp);
@@ -53,7 +53,7 @@ public class Assignment2{
         }
     }
 
-    // Print movies
+    
     static void printMovies(List<Movie> movies) {
         for (Movie m : movies) {
             System.out.println(m.title + " | Rating: " + m.rating + " | Year: " + m.year + " | Popularity: " + m.popularity);
@@ -110,4 +110,5 @@ Movie E | Rating: 6.8 | Year: 2017 | Popularity: 1200
 Movie C | Rating: 7.5 | Year: 2018 | Popularity: 2000
 Movie A | Rating: 8.2 | Year: 2019 | Popularity: 1500
 Movie D | Rating: 8.9 | Year: 2020 | Popularity: 2500
+
 Movie B | Rating: 9.1 | Year: 2021 | Popularity: 3000*/
