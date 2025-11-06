@@ -8,10 +8,10 @@ public class Assignment7 {
 
         boolean[] available = new boolean[V];
 
-        // Assign first color to first vertex
+      
         result[0] = 0;
 
-        // Assign colors to remaining vertices
+       
         for (int u = 1; u < V; u++) {
             Arrays.fill(available, false);
 
@@ -29,7 +29,7 @@ public class Assignment7 {
             result[u] = cr;
         }
 
-        // Print results
+        
         System.out.println("\nExam Schedule (Course : Time Slot)");
         System.out.println("----------------------------------");
         for (int u = 0; u < V; u++) {
@@ -80,5 +80,6 @@ Course 1 --> Slot 1
 Course 2 --> Slot 2
 Course 3 --> Slot 3
 Course 4 --> Slot 1
+
 
 Minimum number of time slots required: 3*/
