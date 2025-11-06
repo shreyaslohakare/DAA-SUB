@@ -29,12 +29,12 @@ public class Assignment5 {
         List<List<Double>> dp = new ArrayList<>();
         List<List<Integer>> parent = new ArrayList<>();
 
-        // Initialize first stage
+       
         int stage0Size = stages.get(0).size();
         dp.add(new ArrayList<>(Collections.nCopies(stage0Size, 0.0)));
         parent.add(new ArrayList<>(Collections.nCopies(stage0Size, -1)));
 
-        // Dynamic Programming computation
+
         for (int i = 1; i < N; i++) {
             int stageSize = stages.get(i).size();
             dp.add(new ArrayList<>(Collections.nCopies(stageSize, INF)));
@@ -65,7 +65,7 @@ public class Assignment5 {
             }
         }
 
-        // Reconstruct path
+       
         List<Integer> path = new ArrayList<>(Collections.nCopies(N, 0));
         int node = lastNode;
         for (int i = N - 1; i >= 0; i--) {
@@ -144,4 +144,5 @@ Edge to node in next stage (0-based index) and cost: 0 4
 Edge to node in next stage (0-based index) and cost: 1 5
 Enter number of nodes in stage 4: 2 
 Optimal path through stages (0-based node indices): 0 1 0 1 
+
 Minimum cost: 9 */
