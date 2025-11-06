@@ -19,12 +19,12 @@ class Node {
 public class Assignment8 {
     static final int INF = 999999;
 
-    // Reduce matrix and return reduction cost
+   
     static int reduceMatrix(int[][] mat) {
         int reduction = 0;
         int n = mat.length;
 
-        // Row reduction
+      
         for (int i = 0; i < n; i++) {
             int rowMin = INF;
             for (int j = 0; j < n; j++)
@@ -37,7 +37,7 @@ public class Assignment8 {
             }
         }
 
-        // Column reduction
+       
         for (int j = 0; j < n; j++) {
             int colMin = INF;
             for (int i = 0; i < n; i++)
@@ -53,7 +53,7 @@ public class Assignment8 {
         return reduction;
     }
 
-    // Create new node
+  
     static Node newNode(int[][] parentMatrix, List<Integer> path, int level, int i, int j) {
         int n = parentMatrix.length;
         int[][] childMatrix = new int[n][n];
@@ -70,7 +70,7 @@ public class Assignment8 {
         return new Node(path, childMatrix, 0, j, level);
     }
 
-    // TSP using Branch and Bound
+   
     static int tspLC(int[][] costMatrix) {
         int n = costMatrix.length;
         PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.cost));
@@ -144,4 +144,5 @@ public class Assignment8 {
 Optimal Route: [0, 1, 3, 2, 0]
 Minimum Cost: 80
     */
+
 
