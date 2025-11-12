@@ -42,7 +42,6 @@ public class Assignment1{
             arr.set(k++, R.get(j++));
     }
 
-    // Recursive Merge Sort
     public static void mergeSort(List<Order> arr, int left, int right) {
         if (left >= right) return;
         int mid = left + (right - left) / 2;
@@ -99,4 +98,5 @@ Order 4 | Timestamp: 321908167 | Value: 767.96
 Order 9 | Timestamp: 376850089 | Value: 878.21
 Order 7 | Timestamp: 432800253 | Value: 613.15
 */
+
 
